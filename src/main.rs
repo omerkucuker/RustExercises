@@ -1,22 +1,22 @@
 fn main() {
 
     //faktöriyel hesaplama
-    faktöriyel();
+    faktöriyel(4);
 
     //dizi-vektör
     diziler();
 }
 
 
-fn faktöriyel (){
-    let num = 4;
-    let mut temp = num;
+fn faktöriyel (number:i32) {
+    let mut temp = number;
     let mut result=1;
     while temp>=1 {
         result *= temp;
         temp -=1;
     }
-    println!("{} sayisinin faktoriyeli = {}",num,result);
+    println!("{} sayisinin faktoriyeli = {}",number,result);
+    
 }
 
 fn diziler(){
